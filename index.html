@@ -13,11 +13,40 @@
     <meta property="og:description" content="Backend, cloud, DevOps, AI-assisted delivery, and practical product engineering portfolio.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/img/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Buddhi Adhikari | Lead Engineering Manager & Software Engineer">
+    <meta name="twitter:description" content="Backend, cloud, DevOps, AI-assisted delivery, and practical product engineering portfolio.">
+    <meta name="twitter:image" content="assets/img/og-image.png">
     <link rel="canonical" href="https://lorddraagonlive.github.io/buddhi-portfolio/">
     <link rel="icon" href="assets/img/favicon.png">
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Buddhi Adhikari",
+        "jobTitle": "Lead Engineering Manager",
+        "email": "mailto:buddhiadhikari@protonmail.com",
+        "url": "https://lorddraagonlive.github.io/buddhi-portfolio/",
+        "sameAs": [
+          "https://www.linkedin.com/in/b-adhikari/",
+          "https://github.com/LordDraagonLive",
+          "https://helagenhq.com/"
+        ],
+        "knowsAbout": [
+          ".NET",
+          "Azure",
+          "DevOps",
+          "Kubernetes",
+          "PostgreSQL",
+          "AI-assisted software development",
+          "Engineering leadership"
+        ]
+      }
+    </script>
   </head>
   <body>
+    <a class="skip-link" href="#home">Skip to content</a>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Buddhi Adhikari home">
         <img
@@ -54,9 +83,10 @@
           </div>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="icon-button primary" href="#work">View work</a>
+            <a class="icon-button" href="Buddhi%20Adhikari%20-%20Lead%20Engineer.pdf" target="_blank" rel="noreferrer">Download CV</a>
             <a class="icon-button" href="mailto:buddhiadhikari@protonmail.com">Email</a>
             <a class="icon-button" href="https://github.com/LordDraagonLive" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="icon-button" href="https://www.linkedin.com/in/buddhi-adhikari" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="icon-button" href="https://www.linkedin.com/in/b-adhikari/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>
 
@@ -96,6 +126,33 @@
           API design, database development, CI/CD, cloud operations, AI-assisted delivery practices,
           and shaping requirements into delivery plans that make sense for clients, users, and engineering teams.
         </p>
+      </section>
+
+      <section class="section current-focus" aria-labelledby="focus-title">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow shiny">Current Focus</p>
+            <h2 id="focus-title">Leading AI-first engineering without losing software discipline.</h2>
+          </div>
+          <p>
+            At Helagen, my focus is helping teams build enterprise software, business apps,
+            and websites with stronger architecture, delivery structure, and platform reliability.
+          </p>
+        </div>
+        <div class="focus-grid">
+          <article>
+            <h3>AI-assisted development</h3>
+            <p>Introduced BMAD-inspired workflows for requirements, architecture, task decomposition, implementation, review, and validation.</p>
+          </article>
+          <article>
+            <h3>Engineering enablement</h3>
+            <p>Mentoring engineers on prompt engineering, context engineering, agent workflows, debugging, refactoring, and code quality.</p>
+          </article>
+          <article>
+            <h3>Product to execution</h3>
+            <p>Translating business and product requirements into roadmaps, system designs, delivery plans, and engineering priorities.</p>
+          </article>
+        </div>
       </section>
 
       <section class="section" aria-labelledby="approach-title">
@@ -153,6 +210,27 @@
           <article>
             <h3>AI-assisted Delivery</h3>
             <p>Spec-driven development, BMAD-inspired workflows, prompt/context engineering, AI-assisted debugging, review, and validation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section leadership" aria-labelledby="leadership-title">
+        <div class="section-heading">
+          <p class="eyebrow shiny">Leadership</p>
+          <h2 id="leadership-title">How I support engineering teams.</h2>
+        </div>
+        <div class="leadership-grid">
+          <article>
+            <h3>Mentor and unblock</h3>
+            <p>Review work, unblock technical issues, and improve engineering practices through practical feedback and shared context.</p>
+          </article>
+          <article>
+            <h3>Shape delivery plans</h3>
+            <p>Turn requirements into architecture, milestones, implementation paths, and validation checks teams can execute against.</p>
+          </article>
+          <article>
+            <h3>Grow team capability</h3>
+            <p>Support recruitment, onboarding, knowledge sharing, and capability development across the engineering function.</p>
           </article>
         </div>
       </section>
@@ -228,7 +306,7 @@
             <ul>
               <li>Moved research distribution beyond email into reusable publishing flows.</li>
               <li>Supported exports to IHS Markit, Bloomberg, and CorpAxe.</li>
-              <li>Helped launch a platform that replaced a legacy system from the late 90s.</li>
+              <li>Helped launch a platform that replaced a legacy system from the late 90s and improved customer engagement by 20%.</li>
             </ul>
             <p class="tech">.NET | Azure | AKS | PostgreSQL</p>
           </article>
@@ -287,7 +365,14 @@
             <div class="project-image">AI</div>
             <div class="project-body">
               <h3>voice-clonergen</h3>
+              <div class="project-meta">
+                <span>Prototype</span>
+                <span>Go</span>
+                <span>React</span>
+                <span>Python</span>
+              </div>
               <p>Self-hosted consent-based voice cloning app with a Go API, React UI, Python worker, preprocessing, TTS generation, and model comparison adapters.</p>
+              <p class="project-note">Why it matters: explores responsible AI tooling with clear separation between API, UI, worker, and model adapters.</p>
               <a href="https://github.com/LordDraagonLive/voice-clonergen" target="_blank" rel="noreferrer">View repository</a>
             </div>
           </article>
@@ -295,7 +380,13 @@
             <div class="project-image">.NET</div>
             <div class="project-body">
               <h3>task-management-app</h3>
+              <div class="project-meta">
+                <span>Backend</span>
+                <span>C#</span>
+                <span>Workflow</span>
+              </div>
               <p>C# task management application showing backend application structure and practical workflow modeling.</p>
+              <p class="project-note">Why it matters: demonstrates straightforward domain modeling for day-to-day operational software.</p>
               <a href="https://github.com/LordDraagonLive/task-management-app" target="_blank" rel="noreferrer">View repository</a>
             </div>
           </article>
@@ -303,7 +394,13 @@
             <div class="project-image">IaC</div>
             <div class="project-body">
               <h3>vm-cluster-arm</h3>
+              <div class="project-meta">
+                <span>Infrastructure</span>
+                <span>HCL</span>
+                <span>Cloud</span>
+              </div>
               <p>Infrastructure-oriented repository using HCL for VM cluster provisioning and cloud setup experiments.</p>
+              <p class="project-note">Why it matters: captures infrastructure thinking beyond application code.</p>
               <a href="https://github.com/LordDraagonLive/vm-cluster-arm" target="_blank" rel="noreferrer">View repository</a>
             </div>
           </article>
@@ -311,7 +408,13 @@
             <div class="project-image">Rust</div>
             <div class="project-body">
               <h3>Terrawler</h3>
+              <div class="project-meta">
+                <span>Research</span>
+                <span>Rust</span>
+                <span>Data</span>
+              </div>
               <p>Rust-based web crawler exploring fast, systems-level data gathering and parsing workflows.</p>
+              <p class="project-note">Why it matters: experiments with performance-oriented data collection and parsing.</p>
               <a href="https://github.com/LordDraagonLive/Terrawler" target="_blank" rel="noreferrer">View repository</a>
             </div>
           </article>
@@ -319,7 +422,13 @@
             <div class="project-image">POS</div>
             <div class="project-body">
               <h3>ElixirPoint</h3>
+              <div class="project-meta">
+                <span>Retail</span>
+                <span>C#</span>
+                <span>POS</span>
+              </div>
               <p>POS and retail stock management application built in C#, tying product workflows to inventory and sales operations.</p>
+              <p class="project-note">Why it matters: connects real retail workflows with inventory and sales operations.</p>
               <a href="https://github.com/LordDraagonLive/ElixirPoint" target="_blank" rel="noreferrer">View repository</a>
             </div>
           </article>
@@ -327,7 +436,13 @@
             <div class="project-image">DApp</div>
             <div class="project-body">
               <h3>Elan-Dapp</h3>
+              <div class="project-meta">
+                <span>Thesis</span>
+                <span>Blockchain</span>
+                <span>IPFS</span>
+              </div>
               <p>Final-year thesis project: decentralized mobile backup agent using Hyperledger Fabric blockchain and IPFS.</p>
+              <p class="project-note">Why it matters: applies decentralized storage concepts to mobile backup and recovery.</p>
               <a href="https://github.com/LordDraagonLive/Elan-Dapp" target="_blank" rel="noreferrer">View repository</a>
             </div>
           </article>
@@ -362,8 +477,9 @@
           <p>Available for software consulting, backend engineering, DevOps, cloud setup, AI-assisted delivery, and technical leadership conversations.</p>
         </div>
         <div class="contact-links">
+          <a href="Buddhi%20Adhikari%20-%20Lead%20Engineer.pdf" target="_blank" rel="noreferrer">Download CV</a>
           <a href="mailto:buddhiadhikari@protonmail.com">buddhiadhikari@protonmail.com</a>
-          <a href="https://www.linkedin.com/in/buddhi-adhikari" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/b-adhikari/" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="https://github.com/LordDraagonLive" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://helagenhq.com/" target="_blank" rel="noreferrer">Helagen</a>
         </div>

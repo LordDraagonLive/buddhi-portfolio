@@ -46,10 +46,34 @@ a {
   text-decoration: none;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 4px;
+}
+
 button,
 input,
 textarea {
   font: inherit;
+}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 200;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--component-strong);
+  color: var(--white);
+  transform: translateY(-160%);
+  transition: transform 180ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
 }
 
 .site-header {
@@ -339,6 +363,8 @@ h3 {
 .glitch-card,
 .skill-grid article,
 .approach-grid article,
+.focus-grid article,
+.leadership-grid article,
 .case-card,
 .project-card,
 .credential-list article {
@@ -439,6 +465,8 @@ h3 {
 
 .skill-grid,
 .approach-grid,
+.focus-grid,
+.leadership-grid,
 .case-grid,
 .project-grid,
 .credential-list {
@@ -454,6 +482,11 @@ h3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.focus-grid,
+.leadership-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .case-grid {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
@@ -464,12 +497,16 @@ h3 {
 
 .skill-grid article,
 .approach-grid article,
+.focus-grid article,
+.leadership-grid article,
 .case-card,
 .credential-list article {
   padding: 22px;
 }
 
-.approach-grid article {
+.approach-grid article,
+.focus-grid article,
+.leadership-grid article {
   min-height: 230px;
 }
 
@@ -481,10 +518,18 @@ h3 {
 }
 
 .skill-grid h3,
+.focus-grid h3,
+.leadership-grid h3,
 .case-card h3,
 .project-card h3,
 .credential-list h3 {
   margin-bottom: 10px;
+}
+
+.focus-grid p,
+.leadership-grid p,
+.project-note {
+  color: var(--white-icon);
 }
 
 .timeline {
@@ -554,6 +599,31 @@ h3 {
 
 .project-body {
   padding: 20px;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0 0 12px;
+}
+
+.project-meta span {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  border: 1px solid var(--white-icon-tr);
+  border-radius: 999px;
+  padding: 4px 9px;
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--lime);
+  font-size: 0.74rem;
+  font-weight: 850;
+}
+
+.project-note {
+  margin-top: 14px;
+  font-size: 0.92rem;
 }
 
 .project-card a {
@@ -694,6 +764,8 @@ h3 {
   }
 
   .approach-grid,
+  .focus-grid,
+  .leadership-grid,
   .project-grid {
     grid-template-columns: 1fr;
   }
