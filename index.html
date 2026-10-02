@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Buddhi Adhikari | Associate Tech Lead & Product-minded Engineer</title>
+    <title>Buddhi Adhikari | Lead Engineering Manager & Software Engineer</title>
     <meta
       name="description"
-      content="Portfolio of Buddhi Adhikari, a Sri Lanka-based associate tech lead specializing in backend systems, cloud platforms, DevOps, and thoughtful UI/UX delivery."
+      content="Portfolio of Buddhi Adhikari, a Sri Lanka-based lead engineering manager specializing in backend systems, cloud platforms, DevOps, AI-assisted delivery, and practical product engineering."
     >
     <meta name="author" content="Buddhi Adhikari">
-    <meta property="og:title" content="Buddhi Adhikari | Associate Tech Lead & Product-minded Engineer">
-    <meta property="og:description" content="Backend, cloud, DevOps, and UI/UX-aware product engineering portfolio.">
+    <meta property="og:title" content="Buddhi Adhikari | Lead Engineering Manager & Software Engineer">
+    <meta property="og:description" content="Backend, cloud, DevOps, AI-assisted delivery, and practical product engineering portfolio.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/28833007?v=4">
+    <meta property="og:image" content="assets/img/og-image.png">
     <link rel="canonical" href="https://lorddraagonlive.github.io/buddhi-portfolio/">
+    <link rel="icon" href="assets/img/favicon.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -22,7 +23,7 @@
         <span class="brand-mark">BA</span>
         <span>Buddhi Adhikari</span>
       </a>
-      <nav class="nav" aria-label="Primary navigation">
+      <nav class="nav" id="main-nav" aria-label="Primary navigation">
         <a href="#experience">Experience</a>
         <a href="#work">Work</a>
         <a href="#projects">Projects</a>
@@ -31,100 +32,96 @@
     </header>
 
     <main id="top">
-      <section class="hero section">
+      <section class="hero section" id="home">
         <div class="hero-copy">
-          <p class="eyebrow">Associate Tech Lead | Software Consultant | Sri Lanka</p>
-          <h1>I build dependable systems with a product designer's sense for user flow.</h1>
-          <p class="lede">
-            I connect backend architecture, cloud operations, and interface thinking so teams can ship
-            software that feels clear to use, practical to maintain, and ready for real business pressure.
-          </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#work">View case studies</a>
-            <a class="button secondary" href="mailto:buddhiadikari@protonmail.com">Email me</a>
+          <p class="eyebrow shiny">Lead Engineering Manager | Software Consultant | Sri Lanka</p>
+          <div class="hero-title-row">
+            <h1>Engineering leadership for reliable cloud products.</h1>
+            <p class="lede">
+              I connect backend architecture, cloud operations, AI-assisted development, and delivery
+              planning so teams can ship software that is practical to maintain, clear in purpose, and ready
+              for real business pressure.
+            </p>
           </div>
-          <div class="signal-row" aria-label="Portfolio strengths">
-            <span>API architecture</span>
-            <span>Cloud delivery</span>
-            <span>UX-aware engineering</span>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="icon-button primary" href="#work">View work</a>
+            <a class="icon-button" href="mailto:buddhiadhikari@protonmail.com">Email</a>
+            <a class="icon-button" href="https://github.com/LordDraagonLive" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="icon-button" href="https://www.linkedin.com/in/buddhi-adhikari" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>
 
-        <aside class="profile-panel" aria-label="Profile summary">
-          <img
-            class="avatar"
-            src="https://avatars.githubusercontent.com/u/28833007?v=4"
-            width="160"
-            height="160"
-            alt="Buddhi Adhikari"
-          >
-          <div>
+        <div class="hero-lower">
+          <aside class="focus-panel" aria-label="Profile summary">
             <p class="panel-kicker">Core focus</p>
-            <h2>Systems thinking, clean delivery, and useful product experiences.</h2>
+            <h2>Systems thinking, clean delivery, and engineering practices that scale.</h2>
+            <dl class="stats">
+              <div>
+                <dt>8+</dt>
+                <dd>years engineering</dd>
+              </div>
+              <div>
+                <dt>Lead</dt>
+                <dd>engineering delivery</dd>
+              </div>
+              <div>
+                <dt>100+</dt>
+                <dd>public GitHub repos</dd>
+              </div>
+            </dl>
+          </aside>
+          <div class="glitch-card" aria-hidden="true">
+            <canvas id="letter-glitch"></canvas>
           </div>
-          <dl class="stats">
-            <div>
-              <dt>6+</dt>
-              <dd>years engineering</dd>
-            </div>
-            <div>
-              <dt>ATL</dt>
-              <dd>technical leadership</dd>
-            </div>
-            <div>
-              <dt>100+</dt>
-              <dd>public GitHub repos</dd>
-            </div>
-          </dl>
-        </aside>
+        </div>
       </section>
 
       <section class="section intro-grid" aria-labelledby="about-title">
         <div>
-          <p class="eyebrow">About</p>
-          <h2 id="about-title">A practical engineering lead who cares how software behaves after the handoff.</h2>
+          <p class="eyebrow shiny">About</p>
+          <h2 id="about-title">A practical engineering leader who cares how software behaves after the handoff.</h2>
         </div>
         <p>
           Buddhi brings software engineering experience across banking, finance, real estate,
-          automobile data, and product experiments. His work centers on backend systems,
-          API design, database development, CI/CD, cloud operations, and shaping requirements
-          into flows that make sense for users, clients, and engineering teams.
+          automobile data, charity, retail, and product experiments. His work centers on backend systems,
+          API design, database development, CI/CD, cloud operations, AI-assisted delivery practices,
+          and shaping requirements into delivery plans that make sense for clients, users, and engineering teams.
         </p>
       </section>
 
-      <section class="section thinking" aria-labelledby="thinking-title">
+      <section class="section" aria-labelledby="approach-title">
         <div class="section-heading split">
           <div>
-            <p class="eyebrow">How I Think</p>
-            <h2 id="thinking-title">UI/UX is not decoration. It is how complexity becomes usable.</h2>
+            <p class="eyebrow shiny">Engineering Approach</p>
+            <h2 id="approach-title">Good delivery starts with clear requirements, architecture, and validation.</h2>
           </div>
           <p>
-            I approach interfaces from the system outward: what the user is trying to decide,
-            what the data needs to prove, and where the product can remove friction before it becomes support work.
+            I approach products from the engineering system outward: what needs to be reliable,
+            what the data needs to prove, and where the team needs structure before complexity becomes rework.
           </p>
         </div>
-        <div class="thinking-grid">
+        <div class="approach-grid">
           <article>
             <span>01</span>
-            <h3>Map the real workflow</h3>
-            <p>Start with user intent, edge cases, roles, and operational pressure before choosing screens or components.</p>
+            <h3>Clarify the real problem</h3>
+            <p>Start with business goals, edge cases, roles, and operational pressure before choosing the technical path.</p>
           </article>
           <article>
             <span>02</span>
-            <h3>Design for confidence</h3>
-            <p>Make states, permissions, errors, audits, and exports obvious so people can trust what they are doing.</p>
+            <h3>Build for confidence</h3>
+            <p>Make permissions, errors, audit trails, exports, and deployment paths reliable enough for production use.</p>
           </article>
           <article>
             <span>03</span>
-            <h3>Keep delivery maintainable</h3>
-            <p>Shape API contracts, data models, and UI flows together so products stay coherent as features grow.</p>
+            <h3>Structure the delivery</h3>
+            <p>Use spec-driven, AI-assisted workflows to connect requirements, architecture, tasks, implementation, and validation.</p>
           </article>
         </div>
       </section>
 
       <section class="section" aria-labelledby="skills-title">
         <div class="section-heading">
-          <p class="eyebrow">Stack</p>
+          <p class="eyebrow shiny">Stack</p>
           <h2 id="skills-title">Tools used to ship and support production systems.</h2>
         </div>
         <div class="skill-grid">
@@ -142,42 +139,53 @@
           </article>
           <article>
             <h3>Frontend & Product</h3>
-            <p>Angular, React, product discovery, UX flows, interaction states, delivery planning, client communication.</p>
+            <p>Angular, React, product discovery, business workflows, delivery planning, client communication.</p>
+          </article>
+          <article>
+            <h3>AI-assisted Delivery</h3>
+            <p>Spec-driven development, BMAD-inspired workflows, prompt/context engineering, AI-assisted debugging, review, and validation.</p>
           </article>
         </div>
       </section>
 
       <section class="section" id="experience" aria-labelledby="experience-title">
         <div class="section-heading">
-          <p class="eyebrow">Experience</p>
+          <p class="eyebrow shiny">Experience</p>
           <h2 id="experience-title">Professional timeline.</h2>
         </div>
         <div class="timeline">
           <article class="timeline-item">
-            <div class="date">Dec 2025 - Present</div>
+            <div class="date">Apr 2026 - Present</div>
+            <div>
+              <h3>Lead Engineering Manager | Helagen</h3>
+              <p>Leading engineering delivery across enterprise software, business apps, websites, architecture, platform reliability, and AI-first development practices.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="date">Dec 2025 - Apr 2026</div>
             <div>
               <h3>Associate Tech Lead | TIQRI</h3>
-              <p>Leading technical delivery across API, database, Azure, and product workflow decisions for a global real estate client, with a focus on maintainable implementation and clearer user journeys.</p>
+              <p>Led technical delivery across API, database, Azure, and product workflow decisions for a global real estate client, with a focus on maintainable implementation and reliable delivery.</p>
             </div>
           </article>
           <article class="timeline-item">
             <div class="date">Dec 2024 - Nov 2025</div>
             <div>
               <h3>Senior Software Engineer / Consultant | TIQRI</h3>
-              <p>Designing and developing APIs and databases for a global real estate company using ASP.NET Core, C#, MS SQL, Azure, and Azure Functions.</p>
+              <p>Designed and developed APIs and databases for a global real estate company using ASP.NET Core, C#, MS SQL, Azure, Azure Functions, and Angular.</p>
             </div>
           </article>
           <article class="timeline-item">
             <div class="date">Nov 2022 - Nov 2024</div>
             <div>
-              <h3>Senior Software Engineer | Global Right Source, Aizenit & CC Group</h3>
+              <h3>Senior Software Engineer | Aizenit Technologies</h3>
               <p>Guided delivery for a small engineering team on a global investment research platform, managed client requirements, supported recruitment and training, and administered CI/CD through Azure DevOps and Azure Portal.</p>
             </div>
           </article>
           <article class="timeline-item">
             <div class="date">Oct 2020 - Oct 2022</div>
             <div>
-              <h3>Software Engineer | Global Right Source, Aizenit & CC Group</h3>
+              <h3>Software Engineer | Aizenit Technologies</h3>
               <p>Built APIs and databases for investment research, maintained legacy ASP.NET systems, integrated Open Banking APIs, and worked across Azure Kubernetes Service, PostgreSQL, MS SQL, C#, and Angular.</p>
             </div>
           </article>
@@ -185,7 +193,7 @@
             <div class="date">Sep 2019 - Apr 2021</div>
             <div>
               <h3>Founder & Software Engineer | INfiniUM Dev</h3>
-              <p>Designed outsourced and startup projects using Python, C#, SQL Server, and JavaScript, including research prototypes and client-focused software solutions.</p>
+              <p>Contributed to research, design, and development of projects including web scrapers, Discord bots, Telegram bots, and client software using C#, Python, SQL Server, and JavaScript.</p>
             </div>
           </article>
           <article class="timeline-item">
@@ -200,7 +208,7 @@
 
       <section class="section" id="work" aria-labelledby="work-title">
         <div class="section-heading">
-          <p class="eyebrow">Case Studies</p>
+          <p class="eyebrow shiny">Case Studies</p>
           <h2 id="work-title">Selected work with business outcomes.</h2>
         </div>
         <div class="case-grid">
@@ -211,25 +219,25 @@
             <ul>
               <li>Moved research distribution beyond email into reusable publishing flows.</li>
               <li>Supported exports to IHS Markit, Bloomberg, and CorpAxe.</li>
-              <li>Improved distribution speed, operational clarity, and visibility into note engagement.</li>
+              <li>Helped launch a platform that replaced a legacy system from the late 90s.</li>
             </ul>
             <p class="tech">.NET | Azure | AKS | PostgreSQL</p>
           </article>
           <article class="case-card">
-            <span class="tag">Automation</span>
-            <h3>OEM Dealer Scraper for CRM</h3>
-            <p>Automated daily ingestion from OEM portals with normalization, deduplication, retries, and auditability.</p>
+            <span class="tag">AI Delivery</span>
+            <h3>AI-first Engineering Workflows</h3>
+            <p>Introduced structured AI-assisted development practices for requirements, architecture, task breakdown, implementation, review, and validation.</p>
             <ul>
-              <li>Reduced manual copy-paste and stale inventory data.</li>
-              <li>Added scheduling, alerts, and safer operational visibility.</li>
-              <li>Supported faster quoting with fresher dealer stock.</li>
+              <li>Mentored engineers on prompt engineering and context engineering.</li>
+              <li>Improved consistency across planning, implementation, debugging, and refactoring.</li>
+              <li>Kept quality and maintainability visible while using AI development tools.</li>
             </ul>
-            <p class="tech">C# | Selenium | HTML Agility Pack | SQL Server</p>
+            <p class="tech">Spec-driven Development | BMAD-inspired Workflows | AI Tools</p>
           </article>
           <article class="case-card">
             <span class="tag">Cloud</span>
-            <h3>HelaGen Website & ERPNext Setup</h3>
-            <p>Designed, developed, hosted, and configured HelaGen web and ERPNext infrastructure on Google Cloud VM instances.</p>
+            <h3>Helagen Website & ERPNext Setup</h3>
+            <p>Designed, developed, hosted, and configured Helagen web and ERPNext infrastructure on Google Cloud VM instances.</p>
             <ul>
               <li>Created a service website for dedicated teams and end-to-end builds.</li>
               <li>Configured ERPNext and Frappe-related infrastructure.</li>
@@ -238,15 +246,15 @@
             <p class="tech">Google Cloud | ERPNext | Frappe | Web Delivery</p>
           </article>
           <article class="case-card">
-            <span class="tag">Product UX</span>
-            <h3>Workflow-first Engineering</h3>
-            <p>Translated client needs into screens, APIs, and delivery plans that keep user decisions and engineering boundaries aligned.</p>
+            <span class="tag">Charity</span>
+            <h3>SCDF DevOps Setup</h3>
+            <p>Supported Azure Windows server setup for Sri Lanka Centre for Development Facilitation with load balancing and multi-user access.</p>
             <ul>
-              <li>Used product context to shape API contracts and data behavior.</li>
-              <li>Clarified user states, validation, and handoff points before build.</li>
-              <li>Balanced technical depth with simple, usable product experiences.</li>
+              <li>Worked on server setup, project management, support, and maintenance.</li>
+              <li>Helped align infrastructure decisions with the organization's operating needs.</li>
+              <li>Provided ongoing support for one year.</li>
             </ul>
-            <p class="tech">UX Flows | API Design | Delivery Planning</p>
+            <p class="tech">Azure | Windows Servers | DevOps | Support</p>
           </article>
         </div>
       </section>
@@ -254,7 +262,7 @@
       <section class="section" id="projects" aria-labelledby="projects-title">
         <div class="section-heading split">
           <div>
-            <p class="eyebrow">GitHub</p>
+            <p class="eyebrow shiny">GitHub</p>
             <h2 id="projects-title">Original public projects.</h2>
           </div>
           <div class="filters" aria-label="Project filters">
@@ -267,41 +275,59 @@
         </div>
         <div class="project-grid">
           <article class="project-card" data-tags="ai go cloud">
-            <h3>voice-clonergen</h3>
-            <p>Self-hosted consent-based voice cloning app with a Go API, React UI, Python worker, preprocessing, TTS generation, and model comparison adapters.</p>
-            <a href="https://github.com/LordDraagonLive/voice-clonergen" target="_blank" rel="noreferrer">View repository</a>
+            <div class="project-image">AI</div>
+            <div class="project-body">
+              <h3>voice-clonergen</h3>
+              <p>Self-hosted consent-based voice cloning app with a Go API, React UI, Python worker, preprocessing, TTS generation, and model comparison adapters.</p>
+              <a href="https://github.com/LordDraagonLive/voice-clonergen" target="_blank" rel="noreferrer">View repository</a>
+            </div>
           </article>
           <article class="project-card" data-tags="dotnet data">
-            <h3>task-management-app</h3>
-            <p>C# task management application showing backend application structure and practical workflow modeling.</p>
-            <a href="https://github.com/LordDraagonLive/task-management-app" target="_blank" rel="noreferrer">View repository</a>
+            <div class="project-image">.NET</div>
+            <div class="project-body">
+              <h3>task-management-app</h3>
+              <p>C# task management application showing backend application structure and practical workflow modeling.</p>
+              <a href="https://github.com/LordDraagonLive/task-management-app" target="_blank" rel="noreferrer">View repository</a>
+            </div>
           </article>
           <article class="project-card" data-tags="cloud">
-            <h3>vm-cluster-arm</h3>
-            <p>Infrastructure-oriented repository using HCL for VM cluster provisioning and cloud setup experiments.</p>
-            <a href="https://github.com/LordDraagonLive/vm-cluster-arm" target="_blank" rel="noreferrer">View repository</a>
+            <div class="project-image">IaC</div>
+            <div class="project-body">
+              <h3>vm-cluster-arm</h3>
+              <p>Infrastructure-oriented repository using HCL for VM cluster provisioning and cloud setup experiments.</p>
+              <a href="https://github.com/LordDraagonLive/vm-cluster-arm" target="_blank" rel="noreferrer">View repository</a>
+            </div>
           </article>
           <article class="project-card" data-tags="data rust">
-            <h3>Terrawler</h3>
-            <p>Rust-based web crawler exploring fast, systems-level data gathering and parsing workflows.</p>
-            <a href="https://github.com/LordDraagonLive/Terrawler" target="_blank" rel="noreferrer">View repository</a>
+            <div class="project-image">Rust</div>
+            <div class="project-body">
+              <h3>Terrawler</h3>
+              <p>Rust-based web crawler exploring fast, systems-level data gathering and parsing workflows.</p>
+              <a href="https://github.com/LordDraagonLive/Terrawler" target="_blank" rel="noreferrer">View repository</a>
+            </div>
           </article>
           <article class="project-card" data-tags="dotnet data">
-            <h3>ElixirPoint</h3>
-            <p>POS and retail stock management application built in C#, tying product workflows to inventory and sales operations.</p>
-            <a href="https://github.com/LordDraagonLive/ElixirPoint" target="_blank" rel="noreferrer">View repository</a>
+            <div class="project-image">POS</div>
+            <div class="project-body">
+              <h3>ElixirPoint</h3>
+              <p>POS and retail stock management application built in C#, tying product workflows to inventory and sales operations.</p>
+              <a href="https://github.com/LordDraagonLive/ElixirPoint" target="_blank" rel="noreferrer">View repository</a>
+            </div>
           </article>
           <article class="project-card" data-tags="cloud data">
-            <h3>Elan-Dapp</h3>
-            <p>Final-year thesis project: decentralized mobile backup agent using Hyperledger Fabric blockchain and IPFS.</p>
-            <a href="https://github.com/LordDraagonLive/Elan-Dapp" target="_blank" rel="noreferrer">View repository</a>
+            <div class="project-image">DApp</div>
+            <div class="project-body">
+              <h3>Elan-Dapp</h3>
+              <p>Final-year thesis project: decentralized mobile backup agent using Hyperledger Fabric blockchain and IPFS.</p>
+              <a href="https://github.com/LordDraagonLive/Elan-Dapp" target="_blank" rel="noreferrer">View repository</a>
+            </div>
           </article>
         </div>
       </section>
 
       <section class="section credentials" aria-labelledby="credentials-title">
         <div>
-          <p class="eyebrow">Credentials</p>
+          <p class="eyebrow shiny">Credentials</p>
           <h2 id="credentials-title">Certifications and education.</h2>
         </div>
         <div class="credential-list">
@@ -322,21 +348,21 @@
 
       <section class="section contact" id="contact" aria-labelledby="contact-title">
         <div>
-          <p class="eyebrow">Contact</p>
+          <p class="eyebrow shiny">Contact</p>
           <h2 id="contact-title">Let's build something dependable.</h2>
-          <p>Available for software consulting, backend engineering, DevOps, cloud setup, and technical leadership conversations.</p>
+          <p>Available for software consulting, backend engineering, DevOps, cloud setup, AI-assisted delivery, and technical leadership conversations.</p>
         </div>
         <div class="contact-links">
-          <a href="mailto:buddhiadikari@protonmail.com">buddhiadikari@protonmail.com</a>
+          <a href="mailto:buddhiadhikari@protonmail.com">buddhiadhikari@protonmail.com</a>
           <a href="https://www.linkedin.com/in/buddhi-adhikari" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="https://github.com/LordDraagonLive" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://helagenhq.com/" target="_blank" rel="noreferrer">HelaGen</a>
+          <a href="https://helagenhq.com/" target="_blank" rel="noreferrer">Helagen</a>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>&copy; <span id="year"></span> Buddhi Adhikari. Built as a static portfolio for GitHub Pages.</p>
+      <p>&copy; <span id="year"></span> Buddhi Adhikari. Static portfolio for GitHub Pages.</p>
     </footer>
 
     <script src="script.js"></script>
