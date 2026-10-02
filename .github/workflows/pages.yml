@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -36,3 +36,34 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Create release for deployed commit
+        if: github.event_name == 'push'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const tagName = `portfolio-${context.runNumber}`;
+            const releaseName = `Portfolio deployment ${context.runNumber}`;
+            const shortSha = context.sha.slice(0, 7);
+
+            await github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: `refs/tags/${tagName}`,
+              sha: context.sha,
+            });
+
+            await github.rest.repos.createRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag_name: tagName,
+              target_commitish: context.sha,
+              name: releaseName,
+              body: [
+                `Deployed portfolio commit ${shortSha} to GitHub Pages.`,
+                ``,
+                `Live site: ${{ steps.deployment.outputs.page_url }}`,
+              ].join("\n"),
+              draft: false,
+              prerelease: false,
+            });
